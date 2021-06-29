@@ -38,10 +38,11 @@ function concatName(arr) {
   return `${lastPosition}, ${firstPosition}`
 }
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  totalPoints = 0;
+  totalPoints = (wins * 3) + (ties * 1);
+  return totalPoints;
 }
-
 // Desafio 6
 function highestCount() {
   // seu código aqui
