@@ -61,15 +61,32 @@ function highestCount(arrayNumber) {
   return count;
 }
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
-}
+function catAndMouse(mouse, cat1, cat2) {
+  let distanceCat1 = 0;
+  let distanceCat2 = 0;
+  distanceCat1 = cat1 - mouse;
+  distanceCat2 = cat2 - mouse;
 
+  //Verifica se os números não são negativos para converte-los
+  if(distanceCat1 < 0){
+    distanceCat1 *= -1; 
+  }else if (distanceCat2 < 0){
+    distanceCat2 *= -1; 
+  }
+
+  //Verifica quem esta mais próximo do mouse
+  if(distanceCat1 === distanceCat2){
+    return 'os gatos trombam e o rato foge';
+  }else if(distanceCat1 < distanceCat2){
+    return 'cat1';
+  }else{
+    return 'cat2';
+  }
+}
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(arrNumber) {
+  // sey código aqui
 }
-
 // Desafio 9
 function encode() {
   // seu código aqui
