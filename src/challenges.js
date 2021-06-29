@@ -100,13 +100,60 @@ function fizzBuzz(arrNumber) {
   return result;
 }
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(textToEncode) {
+  let textEncoded = '';
+  for (let index = 0; index < textToEncode.length; index += 1) {
+    
+    switch (textToEncode[index]) {
+      case 'a':
+        textEncoded += '1';
+        break;
+      case 'e':
+        textEncoded += '2';
+        break;
+      case 'i':
+      textEncoded += '3';
+      break;
+      case 'o':
+      textEncoded += '4'
+      break;
+      case 'u':
+        textEncoded += '5'
+      break;
+      default:
+      textEncoded += textToEncode[index];
+      break;
+    }
+  }
+  return textEncoded;
 }
-function decode() {
-  // seu código aqui
+function decode(textToDecode) {
+  let textDecoded = '';
+  for (let index = 0; index < textToDecode.length; index += 1) {
+    
+    switch (textToDecode[index]) {
+      case '1':
+        textDecoded += 'a';
+        break;
+      case '2':
+        textDecoded += 'e';
+        break;
+      case '3':
+        textDecoded += 'i';
+      break;
+      case '4':
+        textDecoded += 'o'
+      break;
+      case '5':
+        textDecoded += 'u'
+      break;
+      default:
+        textDecoded += textToDecode[index];
+        break;
+    }
+  }
+  return textDecoded;
 }
-
 module.exports = {
   calcArea,
   catAndMouse,
