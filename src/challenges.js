@@ -127,6 +127,7 @@ function encode(textToEncode) {
   }
   return textEncoded;
 }
+
 function decode(textToDecode) {
   let textDecoded = '';
   for (let index = 0; index < textToDecode.length; index += 1) {
