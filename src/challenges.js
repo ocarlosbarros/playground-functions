@@ -24,12 +24,19 @@ function splitSentence(sentence) {
   sentenceArray = sentence.split(" ");
   return sentenceArray;  
 }
-console.log(splitSentence('go Trybe'));
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(arr) {
+  let firstPosition;
+  let lastPosition;
+  for (let index = 0; index < arr.length; index += 1) {
+    if(index === 0){
+      firstPosition = arr[index];
+    }else if( index === arr.length -1){
+      lastPosition = arr[index];
+    }
+  }
+  return `${lastPosition}, ${firstPosition}`
 }
-
 // Desafio 5
 function footballPoints() {
   // seu código aqui
